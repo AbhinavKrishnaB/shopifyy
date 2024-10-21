@@ -1,0 +1,196 @@
+/* Global reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  background-color: yellow;
+  height: 90px;
+  padding: 10px 15px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-item {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.navbar .search-bar input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Banner Image */
+.banner-img img {
+  width: 100%;
+  border-radius: 1.5%;
+  margin-top: 3%;
+  margin-left: 0;
+}
+
+/* Products */
+.container {
+  margin-top: 5%;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+/* About Us */
+.about-us {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar .search-bar {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+  
+  .nav-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .menu-item p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: auto;
+    padding: 5px;
+  }
+
+  .navbar-brand {
+    font-size: 16px;
+  }
+
+  .menu-item p {
+    font-size: 10px;
+  }
+
+  .navbar .menu img {
+    width: 25px;
+  }
+
+  .banner-img img {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about-us {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-us h1 {
+    font-size: 24px;
+  }
+
+  .para {
+    font-size: 16px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
+}
